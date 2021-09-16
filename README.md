@@ -1,0 +1,1 @@
+# IThome-Weisting-Daily-Sample
