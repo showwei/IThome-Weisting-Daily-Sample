@@ -1,0 +1,25 @@
+version: '3.4'
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:10
+    restart: always
+    volumes:
+      - ../postgresql-volume:/var/lib/postgresql/data
+    environment:
+      - ENCODING=UTF8
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=weistingDB
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - backend-bridge
+    ports:
+      - "5432:5432"
+networks:
+  backend-bridge:
+    driver: bridge
