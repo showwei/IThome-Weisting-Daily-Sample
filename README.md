@@ -11,3 +11,4 @@
 >> 9.java spring Service 原理與開發 <br/>
 >> 10.java spring Repository 原理與開發 <br/>
 >> 11.java spring Resource 原理與開發 <br/>
+>> 11.java spring Lazy 原理與開發 <br/>
