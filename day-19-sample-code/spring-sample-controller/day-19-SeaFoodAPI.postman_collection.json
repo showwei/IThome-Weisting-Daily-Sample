@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "120ae9a6-0835-42a4-99ad-b3c95b8bef0c",
+		"name": "SeaFoodAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindSeaFoodByIdFromChina",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/sea/v1/china/find/F-0001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sea",
+						"v1",
+						"china",
+						"find",
+						"F-0001"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "application/json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listSeaFoodFromChina",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/sea/v1/china/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sea",
+						"v1",
+						"china",
+						"list"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "application/json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listSeaFoodFromTaiwan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/sea/v1/taiwan/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sea",
+						"v1",
+						"taiwan",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindSeaFoodByIdFromTaiwan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/sea/v1/taiwan/find/F-0003",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sea",
+						"v1",
+						"taiwan",
+						"find",
+						"F-0003"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "application/json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SeaFoodTaiwanCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"C-0003\",\n        \"name\": \"beach Crab\",\n        \"description\": \"Opilio is the primary species referred to as beach crab.\"\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/sea/v1/taiwan/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sea",
+						"v1",
+						"taiwan",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SeaFoodChinaCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"C-0003\",\n        \"name\": \"beach Crab\",\n        \"description\": \"Opilio is the primary species referred to as beach crab.\"\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/sea/v1/china/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sea",
+						"v1",
+						"china",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSeaFoodFromChina",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"C-0001\",\n        \"name\": \"beach Crab\",\n        \"description\": \"Opilio is the primary species referred to as beach crab.\"\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/sea/v1/china/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sea",
+						"v1",
+						"china",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSeaFoodFromTaiwan",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"C-0001\",\n        \"name\": \"beach Crab\",\n        \"description\": \"Opilio is the primary species referred to as beach crab.\"\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/sea/v1/taiwan/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sea",
+						"v1",
+						"taiwan",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletedSeaFoodFromTaiwan",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"C-0001\",\n        \"name\": \"beach Crab\",\n        \"description\": \"Opilio is the primary species referred to as beach crab.\"\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/sea/v1/taiwan/remove/C-0001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sea",
+						"v1",
+						"taiwan",
+						"remove",
+						"C-0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSeaFoodFromChina",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"C-0001\",\n        \"name\": \"beach Crab\",\n        \"description\": \"Opilio is the primary species referred to as beach crab.\"\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/sea/v1/china/remove/C-0001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sea",
+						"v1",
+						"china",
+						"remove",
+						"C-0001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
