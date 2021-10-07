@@ -19,3 +19,6 @@
 >> 17.java spring Import selector 原理與開發 <br/>
 >> 18.java spring Controller 原理與開發 <br/>
 >> 19.java spring Controller Advice 原理與開發 <br/>
+>> 20.java spring ConfigurationProperties 原理與開發 <br/>
+>> 21.java spring Scheduled 原理與開發 <br/>
+>> 22.java spring Async 原理與開發 <br/>
